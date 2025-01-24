@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+body{
+      background-color: aliceblue;
+   }
+
+.ii {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.vvv{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    border: 3px solid #ddd;
+    padding: 5px;
+    margin-top: 80px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .ii {
+        flex-direction: column;
+    }
+
+    .vvv {
+        max-width: 100%;
+    }
+}
+</style>
+<body>
+<div>
+    <h1 style="text-align: center;">images de notre center</h1>
+ <div class="ii">
+    
+    <div>
+       <img src="1.jpg" class="vvv">
+    </div>
+    <div >
+    <img style="height: 300px;" src="2.jpg" class="vvv" alt="">
+    </div>
+    <div>
+    <img src="3.jpg" class="vvv" alt="">
+    </div>
+    <div>
+    <img src="4.jpg" class="vvv" alt="">
+    </div>
+ </div>
+</div>
+
+
+</body>
+</html>
